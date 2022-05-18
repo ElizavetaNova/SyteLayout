@@ -1,0 +1,21 @@
+.main__partners {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+.partners-logo__a:hover {
+    cursor: pointer;
+}
+@media screen and (max-width: 830px){
+    .main__partners {
+        /*flex-direction: column;*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .partners-logo__a{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}

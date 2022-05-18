@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @font-face {
+            font-family: Mulish;
+            src: url(Mulish/Mulish-VariableFont_wght.ttf);
+        }
+        @font-face {
+            font-family: DMSans;
+            src: url(DM_Sans/DMSans-Regular.ttf);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic app</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/headerScreen.css">
+    <link rel="stylesheet" href="styles/main-landing.css">
+    <link rel="stylesheet" href="styles/main-partners.css">
+    <link rel="stylesheet" href="styles/main-block.css">
+    <link rel="stylesheet" href="styles/main-facilities.css">
+    <link rel="stylesheet" href="styles/main-sale.css">
+</head>
+<body>
+    
+    <header class="header">        
+        <img src="images/Logo.svg"
+            class="header__img"
+            alt="logo" 
+        />
+        <nav class="header__nav nav">
+            <a href="#" class="nav__a">Home</a>
+            <a href="#" class="nav__a">Features</a>
+            <a href="#" class="nav__a">Pricing</a>
+            <a href="#" class="nav__a">Blog</a>
+        </nav>
+        <button class="header__button">
+            Get Started
+        </button>
+    </header>
+    <main class="main">
+        <section class="main__langing main-landing">
+            <div class="main-landing__wrapper">
+                <h1 class="main-landing__title">
+                    Grow your subscription business
+                </h1>
+                <p class="main-landing__text">
+                    Outcome-centered products that reduce churn, optimize pricing, and grow your subscription business end-to-end.
+                </p>
+                <span class="main-landing__buttons landing-buttons">
+                    <button class="landing-buttons__GS">
+                        Get Started
+                    </button>
+                    <button class="landing-buttons__arrow">
+                        <img src="images/arrow-down.svg"
+                             class="landing-buttons__arrow-img"
+                             alt="arrow down" />
+                    </button>
+                </span>
+            </div>
+            <img src="images/Hero.svg"
+                 class="main-landing__img"
+                 alt="human" />
+        </section>
+        <section class="main__partners partners-logo">
+            <a href="#" class="partners-logo__a">
+                <img src="images/logoPartners1.svg"
+                     class="partners-logo__img"
+                     alt="Partner 1" />
+            </a>
+            <a href="#" class="partners-logo__a">
+                <img src="images/logoPartners2.svg"
+                     class="partners-logo__img"
+                     alt="Partner 2" />
+            </a>
+            <a href="#" class="partners-logo__a">
+                <img src="images/logoPartners3.svg"
+                     class="partners-logo__img"
+                     alt="Partner 3" />
+            </a>
+            <a href="#" class="partners-logo__a">
+                <img src="images/logoPartners4.svg"
+                     class="partners-logo__img"
+                     alt="Partner 4" />
+            </a>
+            <a href="#" class="partners-logo__a">
+                <img src="images/logoPartners5.svg"
+                     class="partners-logo__img"
+                     alt="Partner 5" />
+            </a>
+        </section>
+        <section class="main__block main-block">
+            <img src="images/humanAndDiagram.png"
+                 class="main-block__img"
+                 alt="Human and Diagram" />
+            <div class="main-block__wrapper">
+                <h3 class="main-block__title">
+                    Subscription index
+                </h3>
+                <p class="main-block__text">
+                    A daily dataset to keep you up to date on subscription market trends and what's happening in your vertical.
+                </p>
+                <a href="#" class="main-block__a">Learn more</a>
+            </div>
+        </section>
+        <section class="main__block main-block">
+            <div class="main-block__wrapper">
+                <h3 class="main-block__title">
+                    In-depth metrics
+                </h3>
+                <p class="main-block__text">
+                    Accurate, real-time reporting at your fingertips. Getting data has never been easier.
+                </p>
+                <a href="#" class="main-block__a">Learn more</a>
+            </div>
+            <img src="images/humanAndTable.png"
+                 class="main-block__img"
+                 alt="Human and Diagram" />
+        </section>
+        <section class="main__facilities main-facilities">
+            <div class="main-facilities__div">
+                <img src="images/Card.png"
+                     class="main-facilities__img"
+                     alt="Card" />
+                <h4 class="main-facilities__title">
+                    Benchmarks
+                </h4>
+                <p class="main-facilities__text">
+                    See how you stack up against comparable companies in similar stages.
+                </p>
+            </div>
+            <div class="main-facilities__div">
+                <img src="images/Calculator.png"
+                     class="main-facilities__img"
+                     alt="Calculator" />
+                <h4 class="main-facilities__title">
+                    Pricing Audit
+                </h4>
+                <p class="main-facilities__text">
+                    Benchmark the health of your monetization and pricing strategy.
+                </p>
+            </div>
+            <div class="main-facilities__div">
+                <img src="images/Camera.png"
+                     class="main-facilities__img"
+                     alt="Camera" />
+                <h4 class="main-facilities__title">
+                    Retention Audit
+                </h4>
+                <p class="main-facilities__text">
+                    Audit where revenue leakage exists and where you can increase retention.
+                </p>
+            </div>
+        </section>
+        <section class="main__sale main-sale">
+            <div class="main-sale__abstract">
+                <h2 class="main-sale__title">
+                    Get the right plan for future product.
+                </h2>
+                <div class="main-sale__radio-btn">
+                    <div class="radio-btn-item">
+                        <input id="radio-btnYear" type="radio" value="1" name="radio" checked>
+                        <label for="radio-btnYear">Yearly</label>
+                    </div>
+                    
+                    <div class="radio-btn-item">
+                        <input id="radio-btnMonth" type="radio" value="2" name="radio">
+                        <label for="radio-btnMonth">Monthly</label>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="main-sale__tariffs">
+                <div class="tarriffs-block">
+                    <p class="tarriffs-block__text">
+                        Starter
+                    </p>
+                    <h3 class="tarriffs-block__title">
+                        Free
+                    </h3>
+                    <div class="tarriffs-block__description">
+                        <p>
+                            1 Websit
+                        </p>
+                        <p>
+                            5 GB Hosting
+                        </p>
+                        <p>
+                            Limited Support
+                        </p>
+                    </div>
+                        <button class="tarriffs-block__btn">
+                            Get Started
+                        </button>
+                </div>
+                    <div class="tarriffs-block">
+                        <p class="tarriffs-block__text">
+                            Premium
+                        </p>
+                        <h3 class="tarriffs-block__title">
+                            $29<text class="tarriffs-block__title-text">/month</text>
+                        </h3>
+                        <div class="tarriffs-block__description">
+                            <p>
+                                10 Website
+                            </p>
+                            <p>
+                                15 GB Hosting
+                            </p>
+                            <p>
+                                Premium Support
+                            </p>
+                        </div>
+                        <button class="tarriffs-block__btn">
+                            Get Started
+                        </button>
+                    </div>
+                    <div class="tarriffs-block">
+                        <p class="tarriffs-block__text">
+                            Enterprise
+                        </p>
+                        <h3 class="tarriffs-block__title">
+                            $49<text class="tarriffs-block__title-text">/month</text>
+                        </h3>
+                        <div class="tarriffs-block__description">
+                            <p>
+                                Unlimited Website
+                            </p>
+                            <p>
+                                50 GB Hosting
+                            </p>
+                            <p>
+                                Premium Support
+                            </p>                            
+                        </div>
+                        <button class="tarriffs-block__btn">
+                            Get Started
+                        </button>
+                    </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

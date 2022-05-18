@@ -1,0 +1,104 @@
+.main-landing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*margin-top:100px;*/
+}
+.main-landing__img {
+    /*width: 510px;*/
+    height: 644px;
+}
+.main-landing__title {
+    font-size: 80px;
+    width: 462px;
+    height: 231px;
+    color: #19191B;
+    font-family: DMSans;
+    line-height: 77px;
+}
+.main-landing__text {
+    font-size: 20px;
+    width: 462px;
+    height: 90px;
+    color: #696871;
+    font-family: Mulish;
+}
+.landing-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    /*margin-right: 40px;*/
+}
+.landing-buttons__GS {
+    margin-right: 40px;
+    background: #5454D4;
+    width: 211px;
+    height: 60px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border: none;
+    font-size: 17px;
+    transition: all ease 0.7s;
+    font-family: DMSans;
+}
+.landing-buttons__GS:hover {
+    background: #6f0ece;
+    transition: all ease 0.7s;
+    cursor: pointer;
+}
+.landing-buttons__arrow {
+        width: 60px;
+        height: 60px;
+        background: #FFFFFF;
+        border: 1px solid #E7E7E7;
+        border-radius: 60px;
+}
+.landing-buttons__arrow:hover {
+        border: 2px solid #19191B;
+        cursor: pointer;
+}
+@media screen and (max-width: 1080px) {
+    
+    .main-landing__img {
+        width: 40%;
+        height: 40%;
+
+    }
+}
+@media screen and (max-width: 978px) {
+    .main-landing {
+        flex-direction: column;
+    }
+
+    .main-landing__img {
+        width: 60%;
+        order: 1;
+    }
+    .main-landing__text {
+        width: 100%;
+        text-align: center;
+    }
+    .main-landing__title{
+        width:100%;
+        text-align:center;
+    }
+    .main-landing__wrapper {
+        order: 2;
+        width: 100%;
+    }
+    .landing-buttons {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 487px) {
+    .main-landing__title{
+        font-size: 35px;
+        height:40%;
+        width: 100%;
+    }
+    
+    .main-landing__text {
+        height: 60%;
+    }
+}
